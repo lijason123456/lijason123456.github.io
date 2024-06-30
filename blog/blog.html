@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+ <meta charset="UTF-8">
+ <title>读取本地文件文件并显示</title>
+</head>
+<body>
+ 
+<script>
+function show()
+{
+    var reader = new FileReader();
+    reader.onload = function() 
+    {
+        //alert(this.result)
+        story.value=this.result
+    }
+    var f = document.getElementById("filePicker").files[0];
+    reader.readAsText(f);
+}
+</script>
+ 
+<input type="file" name="file" id="filePicker" onchange="show()"  />
+<br>
+ 
+<textarea id="story" name="story" rows="15" cols="60">
+</textarea>
+ 
+</body>
+</html>
