@@ -6,6 +6,7 @@ let secEle = document.getElementsByTagName("section")[0];
 let arr = [
     {time: "2024-07-02", text: "简介", to:"./main/"},
     {time: "2024-07-02", text: "广告", to:"./ad/"},
+    {time: "2024-07-21", text: "《墨香》", to:"./mx/"},
 ]
 
 //将数据渲染到页面上
